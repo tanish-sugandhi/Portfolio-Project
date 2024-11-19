@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Personal Portfolio Website</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- CSS Links -->
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Lato" rel="stylesheet" type="text/css">
+  
+
+  <!-- JS Links -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"  crossorigin="anonymous"></script>
+  
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+    <a class="navbar-brand" href="#">Portfolio</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#projects">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+        <li class="nav-item">
+        </li>
+        
+      </ul>
+    </div>
+  </nav>
+
+  <!-- home section -->
+  <section id="home">
+    <div class="home-container">
+      <div class="img-container">
+        <img src="./pctyuu.jpg" class="rounded-circle">
+      </div>
+      <div class="text-container">
+        <b>Hello,MySelf<br></b>
+        <b>Tanish Sugandhi<br></b><br>
+        <b>And I'm a <span style="color:green;">Junior Software Engineer</span></b>
+        <p>I recently graduated with a degree in Computer Science and am eager to dive into the world of web
+          development. I have a strong foundation in HTML, CSS, and JavaScript, and I’m passionate about creating
+          user-friendly websites. During my studies, I completed a few projects that allowed me to apply my skills
+          practically.</p>
+        <h3>Skills</h3>
+        <div class="skills-section">
+          <div class="skills-category">
+            <h4>Frontend</h4>
+            <div class="skills-container">
+              <div class="skill-item">HTML</div>
+              <div class="skill-item">CSS</div>
+              <div class="skill-item">JavaScript</div>
+            </div>
+          </div>
+
+          <div class="skills-category">
+            <h4>Backend</h4>
+            <div class="skills-container">
+              <div class="skill-item">C</div>
+              <div class="skill-item">Java</div>
+              <div class="skill-item">PHP</div>
+            </div>
+          </div>
+
+          <div class="skills-category">
+            <h4>Database</h4>
+            <div class="skills-container">
+              <div class="skill-item">MySQL</div>
+              <div class="skill-item">MongoDB</div>
+            </div>
+          </div>
+  </section>
+  <!-- </section> -->
+
+
+  <!-- About Section -->
+  <section id="about" class="about-me py-5">
+    <div class="container">
+      <h1 class="text-center mb-4">About Me</h1>
+      <div class="row">
+        <div class="col-lg-6" style="font-size: 20px;">
+            <p>I’m an enthusiastic tech aficionado with a background in software development and design.I graduated with a degree in Computer Science from Medicaps University, where I honed my skills in coding and problem-solving. </p>
+            <p>I graduated with a degree in Computer Science from Medicaps University, where I honed my skills in coding and problem-solving. Over the past few years, I’ve worked on a variety of projects, from building dynamic websites to developing mobile applications. My experience includes collaborating with cross-functional teams, ensuring that user needs are at the forefront of the development process.</p>
+            <p class="interests">Outside of work, I love to play cricket and capturing moments that tell a story. I also enjoy hiking and exploring nature, which often inspires my creative process. I’m an avid reader, with a particular interest in science fiction and fantasy novels, as they fuel my imagination and inspire innovative ideas.</p>
+        </div>
+        <div class="col-lg-6 text-center">
+          <img src="./pctyuu.jpg" class="img-fluid rounded-circle" alt="Profile Picture"
+            style="width: 300px; height: 300px;">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Projects</h2>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card shadow">
+            <img src="./exmination.jpg" class="card-img-top" alt="Project 1">
+            <div class="card-body">
+              <h5 class="card-title" style="color: blue;">Online Examination</h5>
+              <p class="card-text">A web application that allows users to take online exams with real-time feedback.</p>
+              <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#onlineExamModal">View Project</button>
+        
+              <!-- Modal for Online Examination -->
+              <div class="modal fade" id="onlineExamModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel" style="color: blue;">Online Examination</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <h2>Overview:</h2>
+                      <p>This project helps students create accounts and log in to attempt online exams.</p>
+                      <h3>Key Features:</h3>
+                      <ul>
+                        <li><strong>User-friendly Interface:</strong> Intuitive design for easy navigation.</li>
+                        <li><strong>Secure Authentication:</strong> Robust security for user accounts.</li>
+                        <li><strong>Automated Exam Scheduling:</strong> View available exams and schedule attempts.</li>
+                      </ul>
+                      <h3>Technologies Used:</h3>
+                      <h6>Backend:</h6>
+                      <p>Java, JSP, Servlet</p>
+                      <h6>Frontend:</h6>
+                      <p>HTML, CSS</p>
+                      <h6>Database:</h6>
+                      <p>MySQL</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-4 mb-4">
+          <div class="card shadow">
+            <img src="./banking.webp" class="card-img-top" alt="Project 2">
+            <div class="card-body">
+              <h5 class="card-title" style="color: blue;">Banking System</h5>
+              <p class="card-text">A secure web-based banking application for managing accounts and transactions.Where
+                user can withdraw amount if balance is sufficient and deposit amount safely.</p>
+                <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#bankingSystemModal">View Project</button>
+
+              <!-- Modal for Banking System -->
+              <div class="modal fade" id="bankingSystemModal" tabindex="-1" role="dialog"
+                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel" style="color: blue;">Banking System</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <h2>Overview:</h2>
+                      <p>The Banking System project simulates basic banking operations such as user registration,
+                        account management, and transactions.</p>
+                      <h3>Key Features:</h3>
+                      <ul>
+                        <li><strong>Deposit Functionality:</strong> Users can deposit money into their accounts.</li>
+                        <li><strong>Withdrawal Functionality:</strong> Users can withdraw money from their accounts.
+                        </li>
+                      </ul>
+                      <h3>About:</h3>
+                      <p>This project aims to provide an educational experience in software development, focusing on
+                        object-oriented programming and data handling.</p>
+                      <h3>Technologies Used:</h3>
+                      <h6>Backend:</h6>
+                      <p>Java</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <div class="card shadow">
+            <img src="./performance.webp" class="card-img-top" alt="Project 3">
+            <div class="card-body">
+              <h5 class="card-title" style="color: blue;">Performance Management System</h5>
+              <p class="card-text">An interactive platform for employee performance tracking and feedback and employee
+                also can set its own goal.</p>
+                <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#performanceManagementModal">View Project</button>
+              <!-- Modal for Performance Management System -->
+              <div class="modal fade" id="performanceManagementModal" tabindex="-1" role="dialog"
+                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel" style="color: blue;">Performance Management System</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <h2>Overview:</h2>
+                      <p>This platform streamlines employee performance tracking and feedback and there is one on one
+                        meeting to track the progress.</p>
+                      <h3>Key Features:</h3>
+                      <ul>
+                        <li><strong>Performance Tracking:</strong> Easily monitor employee progress.</li>
+                        <li><strong>Feedback System:</strong> Allows for structured feedback.</li>
+                      </ul>
+                      <h3>Technologies Used:</h3>
+                      <h6>Backend:</h6>
+                      <p>Java, Spring Boot</p>
+                      <h6>Frontend:</h6>
+                      <p>React</p>
+                      <h6>Database:</h6>
+                      <p>MySQL</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section --> 
+  <section id="contact" class="contact-color py-5">
+    <div class="container text-center">
+      <h3>Contact Me</h3>
+      <div class="card mx-auto" style="max-width: 500px; padding: 20px;">
+        <div class="card-body">
+<!-- onsubmit="return validateForm()" -->
+          <form name="RegForm"  action="ajax.php" method="POST">
+            <p>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="Name" placeholder="Enter your full name" />
+                <span id="name-error" class="error-message"></span>
+            </p>
+           
+            <p>
+                <label for="email">E-mail Address:</label>
+                <input type="text" id="email" name="Email" placeholder="Enter your email" />
+                <span id="email-error" class="error-message"></span>
+            </p>
+           
+            <p>
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="Subject" placeholder="Enter your subject" />
+                <span id="subject-error" class="error-message"></span>
+            </p>
+       
+            <p>
+                <label for="message">Message:</label>
+                <textarea id="message" name="Message" placeholder="Enter your message"></textarea>
+                <span id="message-error" class="error-message"></span>
+            </p>
+       
+            <p>
+                <input type="submit" value="Send" name="Submit" />
+            </p>
+        </form>
+       
+        <!-- Popup Message -->
+        <div id="popup" class="popup" style="display:none;">
+            <p>Your message has been successfully submitted!</p> 
+             <button onclick="closePopup()">Close</button>
+        </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="./index.js"></script>
+
+
+
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-4">
+    <h2>Contact Us</h2>
+    <p>Contact us and we'll get back to you within 24 hours.</p>
+    <p><span class="glyphicon glyphicon-map-marker"></span> Indore, Madhya Pradesh, India</p>
+    <p><span class="glyphicon glyphicon-phone"></span> +91-8305199611</p>
+    <p><span class="glyphicon glyphicon-envelope"></span> tanish.sugandhi@gmail.com</p>
+    <p>Zehntech Technology @ All rights reserved</p>
+  </footer>
+
+</body>
+
+</html>
